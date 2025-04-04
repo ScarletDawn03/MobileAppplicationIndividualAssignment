@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    tools:context=".ComposeNumbersActivity">
+
+    <!-- Top Section: Level and Score -->
+    <LinearLayout
+        android:id="@+id/topSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textQuestionNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Q : 1/10"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRightAnswered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RA : 1/10"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Centered Section for Game Elements -->
+    <LinearLayout
+        android:id="@+id/centerSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Middle Circle (Target Sum Display) -->
+        <TextView
+            android:id="@+id/middleCircle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/circle_shape"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="@font/knewave"
+            android:textColor="@color/red"
+            android:text="?"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Horizontal Layout: Left and Right Input Circles with Connector -->
+        <LinearLayout
+            android:id="@+id/inputSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Left Input Circle -->
+            <EditText
+                android:id="@+id/leftInput"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:fontFamily="@font/knewave"
+                android:textColor="@color/red"
+                android:layout_marginEnd="20dp"/>
+
+            <!-- Connector Line -->
+            <View
+                android:id="@+id/connectorLine"
+                android:layout_width="40dp"
+                android:layout_height="5dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center_vertical"/>
+
+            <!-- Right Input Circle -->
+            <EditText
+                android:id="@+id/rightInput"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:fontFamily="@font/knewave"
+                android:textColor="@color/red"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+
+        <!-- Check Button -->
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Result will be shown here"
+            android:fontFamily="@font/knewave"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

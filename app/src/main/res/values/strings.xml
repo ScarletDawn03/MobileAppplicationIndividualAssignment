@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baby Math</string>
+    <string name="compare_numbers">Compare Numbers</string>
+    <string name="order_numbers">Order Numbers</string>
+    <string name="compose_numbers">Compose Numbers</string>
+    <string name="greater_than">Greater Than</string>
+    <string name="less_than">Less Than</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="check">Check</string>
+</resources>

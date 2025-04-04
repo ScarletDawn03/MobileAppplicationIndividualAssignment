@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textRightAnswered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="WELCOME TO BABY MATH"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_compare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare Numbers"
+            android:onClick="openCompareNumbers"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Numbers"
+            android:onClick="openOrderNumbers"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_compose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compose Numbers"
+            android:onClick="openComposeNumbers"
+            android:backgroundTint="@color/black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btnMute"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/unmute"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="toggleMute"/>
+    </LinearLayout>
+
+
+</LinearLayout>
